@@ -1,0 +1,58 @@
+India retail Data
+
+   Invoice_ID         Invoice_Date       City Store_Format   Category  \
+0    58018430  2024-02-02 13:50:00    Kolkata        Super    Grocery   
+1    48157952  2024-10-09 11:52:00  Hyderabad        Hyper  Home Care   
+2    23283831  2024-08-26 22:03:00    Chennai        Hyper     Snacks   
+3    53537460  2024-06-09 04:34:00  Bengaluru        Hyper  Beverages   
+4    55348596  2024-06-07 01:13:00      Delhi        Super     Snacks   
+
+     Brand      Channel Payment_Mode  Units  Cost_Price  Selling_Price  \
+0   Nestle       Online       Wallet      2  148.999035     175.057209   
+1  PepsiCo      Offline       Wallet      1   80.626759     106.034197   
+2  PepsiCo       Online         Card      5  181.233170     208.980023   
+3   Nestle  Omnichannel         Card      2  195.811402     260.879960   
+4      ITC      Offline         Card      3   23.571888      30.624472   
+
+       Revenue        Cost      Margin  Margin_%  Stock_On_Hand  \
+0   350.114418  297.998070   52.116348  0.148855            154   
+1   106.034197   80.626759   25.407438  0.239616            130   
+2  1044.900114  906.165848  138.734266  0.132773            270   
+3   521.759920  391.622805  130.137115  0.249420            403   
+4    91.873416   70.715665   21.157751  0.230292            366   
+
+   Reorder_Level  Lead_Time_Days  Customer_Age Customer_Gender  Loyalty_Flag  
+0             31              11          20.0               M             1  
+1             24               5          26.0               F             1  
+2             44               8          27.0               F             0  
+3             63               8           NaN               F             0  
+4             40               9          60.0               F             1  
+Kolkata Data
+
+  Item_Identifier  Item_Weight Item_Fat_Content  Item_Visibility  \
+0           FDA15         9.30          Low Fat         0.016047   
+1           DRC01         5.92          Regular         0.019278   
+2           FDN15        17.50          Low Fat         0.016760   
+3           FDX07        19.20          Regular         0.000000   
+4           NCD19         8.93          Low Fat         0.000000   
+
+               Item_Type  Item_MRP Outlet_Identifier  \
+0                  Dairy     249.8            OUT049   
+1            Soft Drinks      48.3            OUT018   
+2                   Meat     141.6            OUT049   
+3  Fruits and Vegetables     182.1            OUT010   
+4              Household      53.9            OUT013   
+
+   Outlet_Establishment_Year Outlet_Size Outlet_Location_Type  \
+0                       1999      Medium               Tier 2   
+1                       2009      Medium               Tier 2   
+2                       1999      Medium               Tier 2   
+3                       1998      Medium               Tier 2   
+4                       1987        High               Tier 3   
+
+         Outlet_Type  Item_Outlet_Sales  Profit  
+0  Supermarket Type1          3735.1380    11.5  
+1  Supermarket Type2           443.4228    14.3  
+2  Supermarket Type1          2097.2700    14.5  
+3      Grocery Store           732.3800    13.6  
+4  Supermarket Type1           994.7052    14.1  
