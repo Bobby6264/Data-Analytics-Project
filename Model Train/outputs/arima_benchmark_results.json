@@ -1,0 +1,2563 @@
+{
+  "model": "ARIMA Baseline (5,1,0)",
+  "total_slices": 192,
+  "avg_rmse": 4.32,
+  "avg_mape": 75.96,
+  "avg_mae": 3.5,
+  "best_3": [
+    {
+      "Slice": "Mumbai - Home Care (Super)",
+      "City": "Mumbai",
+      "Store_Format": "Super",
+      "Category": "Home Care",
+      "RMSE": 1.89,
+      "MAPE (%)": "38.47%",
+      "MAE": 1.65
+    },
+    {
+      "Slice": "Delhi - Home Care (Super)",
+      "City": "Delhi",
+      "Store_Format": "Super",
+      "Category": "Home Care",
+      "RMSE": 2.11,
+      "MAPE (%)": "53.66%",
+      "MAE": 1.68
+    },
+    {
+      "Slice": "Chennai - Snacks (Super)",
+      "City": "Chennai",
+      "Store_Format": "Super",
+      "Category": "Snacks",
+      "RMSE": 2.2,
+      "MAPE (%)": "62.9%",
+      "MAE": 1.87
+    }
+  ],
+  "worst_3": [
+    {
+      "Slice": "Ahmedabad - Grocery (Super)",
+      "City": "Ahmedabad",
+      "Store_Format": "Super",
+      "Category": "Grocery",
+      "RMSE": 8.95,
+      "MAPE (%)": "79.87%",
+      "MAE": 6.03
+    },
+    {
+      "Slice": "Ahmedabad - Beverages (Super)",
+      "City": "Ahmedabad",
+      "Store_Format": "Super",
+      "Category": "Beverages",
+      "RMSE": 6.64,
+      "MAPE (%)": "93.37%",
+      "MAE": 4.77
+    },
+    {
+      "Slice": "Kolkata - Home Care (Hyper)",
+      "City": "Kolkata",
+      "Store_Format": "Hyper",
+      "Category": "Home Care",
+      "RMSE": 6.53,
+      "MAPE (%)": "71.06%",
+      "MAE": 4.45
+    }
+  ],
+  "slices": {
+    "Ahmedabad_Express_Beverages": {
+      "city": "Ahmedabad",
+      "format": "Express",
+      "category": "Beverages",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 5.68,
+        "mape": 35.81,
+        "mae": 4.39
+      },
+      "mean_actual": 4.57,
+      "mean_predicted": 4.7
+    },
+    "Ahmedabad_Hyper_Beverages": {
+      "city": "Ahmedabad",
+      "format": "Hyper",
+      "category": "Beverages",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.7,
+        "mape": 41.57,
+        "mae": 2.5
+      },
+      "mean_actual": 4.21,
+      "mean_predicted": 3.43
+    },
+    "Ahmedabad_Super_Beverages": {
+      "city": "Ahmedabad",
+      "format": "Super",
+      "category": "Beverages",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 6.64,
+        "mape": 93.37,
+        "mae": 4.77
+      },
+      "mean_actual": 4.86,
+      "mean_predicted": 0.36
+    },
+    "Ahmedabad_Express_Dairy": {
+      "city": "Ahmedabad",
+      "format": "Express",
+      "category": "Dairy",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.07,
+        "mape": 65.64,
+        "mae": 3.48
+      },
+      "mean_actual": 4.43,
+      "mean_predicted": 3.26
+    },
+    "Ahmedabad_Hyper_Dairy": {
+      "city": "Ahmedabad",
+      "format": "Hyper",
+      "category": "Dairy",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.82,
+        "mape": 44.24,
+        "mae": 3.23
+      },
+      "mean_actual": 4.21,
+      "mean_predicted": 4.76
+    },
+    "Ahmedabad_Super_Dairy": {
+      "city": "Ahmedabad",
+      "format": "Super",
+      "category": "Dairy",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.87,
+        "mape": 59.28,
+        "mae": 3.79
+      },
+      "mean_actual": 4.79,
+      "mean_predicted": 1.88
+    },
+    "Ahmedabad_Express_Fruits": {
+      "city": "Ahmedabad",
+      "format": "Express",
+      "category": "Fruits",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.02,
+        "mape": 56.17,
+        "mae": 3.79
+      },
+      "mean_actual": 3.36,
+      "mean_predicted": 3.23
+    },
+    "Ahmedabad_Hyper_Fruits": {
+      "city": "Ahmedabad",
+      "format": "Hyper",
+      "category": "Fruits",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.82,
+        "mape": 34.35,
+        "mae": 3.17
+      },
+      "mean_actual": 2.93,
+      "mean_predicted": 4.87
+    },
+    "Ahmedabad_Super_Fruits": {
+      "city": "Ahmedabad",
+      "format": "Super",
+      "category": "Fruits",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.56,
+        "mape": 41.76,
+        "mae": 3.02
+      },
+      "mean_actual": 2.86,
+      "mean_predicted": 4.8
+    },
+    "Ahmedabad_Express_Grocery": {
+      "city": "Ahmedabad",
+      "format": "Express",
+      "category": "Grocery",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.15,
+        "mape": 97.09,
+        "mae": 2.76
+      },
+      "mean_actual": 4.29,
+      "mean_predicted": 4.3
+    },
+    "Ahmedabad_Hyper_Grocery": {
+      "city": "Ahmedabad",
+      "format": "Hyper",
+      "category": "Grocery",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 5.29,
+        "mape": 105.73,
+        "mae": 3.87
+      },
+      "mean_actual": 4.43,
+      "mean_predicted": 3.52
+    },
+    "Ahmedabad_Super_Grocery": {
+      "city": "Ahmedabad",
+      "format": "Super",
+      "category": "Grocery",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 8.95,
+        "mape": 79.87,
+        "mae": 6.03
+      },
+      "mean_actual": 6.57,
+      "mean_predicted": 1.06
+    },
+    "Ahmedabad_Express_Home Care": {
+      "city": "Ahmedabad",
+      "format": "Express",
+      "category": "Home Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.84,
+        "mape": 67.65,
+        "mae": 3.26
+      },
+      "mean_actual": 3.93,
+      "mean_predicted": 2.06
+    },
+    "Ahmedabad_Hyper_Home Care": {
+      "city": "Ahmedabad",
+      "format": "Hyper",
+      "category": "Home Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.1,
+        "mape": 40.72,
+        "mae": 3.12
+      },
+      "mean_actual": 5.0,
+      "mean_predicted": 3.57
+    },
+    "Ahmedabad_Super_Home Care": {
+      "city": "Ahmedabad",
+      "format": "Super",
+      "category": "Home Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 5.87,
+        "mape": 51.46,
+        "mae": 4.57
+      },
+      "mean_actual": 6.21,
+      "mean_predicted": 3.24
+    },
+    "Ahmedabad_Express_Personal Care": {
+      "city": "Ahmedabad",
+      "format": "Express",
+      "category": "Personal Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.02,
+        "mape": 54.07,
+        "mae": 2.57
+      },
+      "mean_actual": 3.29,
+      "mean_predicted": 4.57
+    },
+    "Ahmedabad_Hyper_Personal Care": {
+      "city": "Ahmedabad",
+      "format": "Hyper",
+      "category": "Personal Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.09,
+        "mape": 84.14,
+        "mae": 3.52
+      },
+      "mean_actual": 2.71,
+      "mean_predicted": 5.73
+    },
+    "Ahmedabad_Super_Personal Care": {
+      "city": "Ahmedabad",
+      "format": "Super",
+      "category": "Personal Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.23,
+        "mape": 119.49,
+        "mae": 3.83
+      },
+      "mean_actual": 3.5,
+      "mean_predicted": 4.65
+    },
+    "Ahmedabad_Express_Snacks": {
+      "city": "Ahmedabad",
+      "format": "Express",
+      "category": "Snacks",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.35,
+        "mape": 138.86,
+        "mae": 3.75
+      },
+      "mean_actual": 4.57,
+      "mean_predicted": 5.38
+    },
+    "Ahmedabad_Hyper_Snacks": {
+      "city": "Ahmedabad",
+      "format": "Hyper",
+      "category": "Snacks",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 2.96,
+        "mape": 37.68,
+        "mae": 2.46
+      },
+      "mean_actual": 3.43,
+      "mean_predicted": 3.69
+    },
+    "Ahmedabad_Super_Snacks": {
+      "city": "Ahmedabad",
+      "format": "Super",
+      "category": "Snacks",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 5.37,
+        "mape": 70.28,
+        "mae": 4.12
+      },
+      "mean_actual": 4.79,
+      "mean_predicted": 1.29
+    },
+    "Ahmedabad_Express_Vegetables": {
+      "city": "Ahmedabad",
+      "format": "Express",
+      "category": "Vegetables",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.16,
+        "mape": 63.25,
+        "mae": 3.04
+      },
+      "mean_actual": 3.43,
+      "mean_predicted": 1.72
+    },
+    "Ahmedabad_Hyper_Vegetables": {
+      "city": "Ahmedabad",
+      "format": "Hyper",
+      "category": "Vegetables",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.74,
+        "mape": 66.17,
+        "mae": 2.8
+      },
+      "mean_actual": 3.57,
+      "mean_predicted": 1.75
+    },
+    "Ahmedabad_Super_Vegetables": {
+      "city": "Ahmedabad",
+      "format": "Super",
+      "category": "Vegetables",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.66,
+        "mape": 76.28,
+        "mae": 3.28
+      },
+      "mean_actual": 2.64,
+      "mean_predicted": 4.42
+    },
+    "Bengaluru_Express_Beverages": {
+      "city": "Bengaluru",
+      "format": "Express",
+      "category": "Beverages",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 6.3,
+        "mape": 85.66,
+        "mae": 5.17
+      },
+      "mean_actual": 5.71,
+      "mean_predicted": 0.76
+    },
+    "Bengaluru_Hyper_Beverages": {
+      "city": "Bengaluru",
+      "format": "Hyper",
+      "category": "Beverages",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.95,
+        "mape": 95.42,
+        "mae": 3.53
+      },
+      "mean_actual": 3.21,
+      "mean_predicted": 4.62
+    },
+    "Bengaluru_Super_Beverages": {
+      "city": "Bengaluru",
+      "format": "Super",
+      "category": "Beverages",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.38,
+        "mape": 65.03,
+        "mae": 3.17
+      },
+      "mean_actual": 3.5,
+      "mean_predicted": 3.06
+    },
+    "Bengaluru_Express_Dairy": {
+      "city": "Bengaluru",
+      "format": "Express",
+      "category": "Dairy",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 5.7,
+        "mape": 72.14,
+        "mae": 4.35
+      },
+      "mean_actual": 4.57,
+      "mean_predicted": 1.7
+    },
+    "Bengaluru_Hyper_Dairy": {
+      "city": "Bengaluru",
+      "format": "Hyper",
+      "category": "Dairy",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.93,
+        "mape": 103.29,
+        "mae": 3.57
+      },
+      "mean_actual": 2.71,
+      "mean_predicted": 5.88
+    },
+    "Bengaluru_Super_Dairy": {
+      "city": "Bengaluru",
+      "format": "Super",
+      "category": "Dairy",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 2.68,
+        "mape": 103.46,
+        "mae": 2.49
+      },
+      "mean_actual": 2.29,
+      "mean_predicted": 3.7
+    },
+    "Bengaluru_Express_Fruits": {
+      "city": "Bengaluru",
+      "format": "Express",
+      "category": "Fruits",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 2.9,
+        "mape": 65.76,
+        "mae": 2.4
+      },
+      "mean_actual": 4.0,
+      "mean_predicted": 3.17
+    },
+    "Bengaluru_Hyper_Fruits": {
+      "city": "Bengaluru",
+      "format": "Hyper",
+      "category": "Fruits",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.55,
+        "mape": 110.17,
+        "mae": 3.18
+      },
+      "mean_actual": 3.57,
+      "mean_predicted": 4.47
+    },
+    "Bengaluru_Super_Fruits": {
+      "city": "Bengaluru",
+      "format": "Super",
+      "category": "Fruits",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 5.67,
+        "mape": 72.56,
+        "mae": 3.98
+      },
+      "mean_actual": 4.43,
+      "mean_predicted": 0.75
+    },
+    "Bengaluru_Express_Grocery": {
+      "city": "Bengaluru",
+      "format": "Express",
+      "category": "Grocery",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 5.97,
+        "mape": 107.55,
+        "mae": 4.75
+      },
+      "mean_actual": 5.71,
+      "mean_predicted": 4.79
+    },
+    "Bengaluru_Hyper_Grocery": {
+      "city": "Bengaluru",
+      "format": "Hyper",
+      "category": "Grocery",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.16,
+        "mape": 42.19,
+        "mae": 2.75
+      },
+      "mean_actual": 3.79,
+      "mean_predicted": 4.32
+    },
+    "Bengaluru_Super_Grocery": {
+      "city": "Bengaluru",
+      "format": "Super",
+      "category": "Grocery",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.68,
+        "mape": 46.34,
+        "mae": 2.99
+      },
+      "mean_actual": 5.36,
+      "mean_predicted": 2.92
+    },
+    "Bengaluru_Express_Home Care": {
+      "city": "Bengaluru",
+      "format": "Express",
+      "category": "Home Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.36,
+        "mape": 52.27,
+        "mae": 2.5
+      },
+      "mean_actual": 2.93,
+      "mean_predicted": 2.32
+    },
+    "Bengaluru_Hyper_Home Care": {
+      "city": "Bengaluru",
+      "format": "Hyper",
+      "category": "Home Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.17,
+        "mape": 90.23,
+        "mae": 3.05
+      },
+      "mean_actual": 4.36,
+      "mean_predicted": 3.48
+    },
+    "Bengaluru_Super_Home Care": {
+      "city": "Bengaluru",
+      "format": "Super",
+      "category": "Home Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.2,
+        "mape": 76.49,
+        "mae": 2.66
+      },
+      "mean_actual": 4.36,
+      "mean_predicted": 3.05
+    },
+    "Bengaluru_Express_Personal Care": {
+      "city": "Bengaluru",
+      "format": "Express",
+      "category": "Personal Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.51,
+        "mape": 191.66,
+        "mae": 3.81
+      },
+      "mean_actual": 4.71,
+      "mean_predicted": 7.53
+    },
+    "Bengaluru_Hyper_Personal Care": {
+      "city": "Bengaluru",
+      "format": "Hyper",
+      "category": "Personal Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.76,
+        "mape": 131.2,
+        "mae": 3.09
+      },
+      "mean_actual": 4.43,
+      "mean_predicted": 5.11
+    },
+    "Bengaluru_Super_Personal Care": {
+      "city": "Bengaluru",
+      "format": "Super",
+      "category": "Personal Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.76,
+        "mape": 74.41,
+        "mae": 3.28
+      },
+      "mean_actual": 3.71,
+      "mean_predicted": 4.13
+    },
+    "Bengaluru_Express_Snacks": {
+      "city": "Bengaluru",
+      "format": "Express",
+      "category": "Snacks",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.53,
+        "mape": 49.54,
+        "mae": 2.75
+      },
+      "mean_actual": 4.0,
+      "mean_predicted": 3.08
+    },
+    "Bengaluru_Hyper_Snacks": {
+      "city": "Bengaluru",
+      "format": "Hyper",
+      "category": "Snacks",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 5.07,
+        "mape": 42.02,
+        "mae": 4.15
+      },
+      "mean_actual": 4.21,
+      "mean_predicted": 4.55
+    },
+    "Bengaluru_Super_Snacks": {
+      "city": "Bengaluru",
+      "format": "Super",
+      "category": "Snacks",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.54,
+        "mape": 23.4,
+        "mae": 3.14
+      },
+      "mean_actual": 4.43,
+      "mean_predicted": 5.99
+    },
+    "Bengaluru_Express_Vegetables": {
+      "city": "Bengaluru",
+      "format": "Express",
+      "category": "Vegetables",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 5.46,
+        "mape": 71.3,
+        "mae": 4.15
+      },
+      "mean_actual": 5.07,
+      "mean_predicted": 3.34
+    },
+    "Bengaluru_Hyper_Vegetables": {
+      "city": "Bengaluru",
+      "format": "Hyper",
+      "category": "Vegetables",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 5.13,
+        "mape": 49.1,
+        "mae": 3.68
+      },
+      "mean_actual": 6.07,
+      "mean_predicted": 2.62
+    },
+    "Bengaluru_Super_Vegetables": {
+      "city": "Bengaluru",
+      "format": "Super",
+      "category": "Vegetables",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.04,
+        "mape": 56.47,
+        "mae": 3.92
+      },
+      "mean_actual": 4.71,
+      "mean_predicted": 4.04
+    },
+    "Chennai_Express_Beverages": {
+      "city": "Chennai",
+      "format": "Express",
+      "category": "Beverages",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.51,
+        "mape": 21.16,
+        "mae": 3.13
+      },
+      "mean_actual": 1.0,
+      "mean_predicted": 4.13
+    },
+    "Chennai_Hyper_Beverages": {
+      "city": "Chennai",
+      "format": "Hyper",
+      "category": "Beverages",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.9,
+        "mape": 70.24,
+        "mae": 3.2
+      },
+      "mean_actual": 3.86,
+      "mean_predicted": 3.96
+    },
+    "Chennai_Super_Beverages": {
+      "city": "Chennai",
+      "format": "Super",
+      "category": "Beverages",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 5.14,
+        "mape": 43.99,
+        "mae": 4.01
+      },
+      "mean_actual": 5.29,
+      "mean_predicted": 3.62
+    },
+    "Chennai_Express_Dairy": {
+      "city": "Chennai",
+      "format": "Express",
+      "category": "Dairy",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.46,
+        "mape": 175.62,
+        "mae": 2.91
+      },
+      "mean_actual": 3.36,
+      "mean_predicted": 5.81
+    },
+    "Chennai_Hyper_Dairy": {
+      "city": "Chennai",
+      "format": "Hyper",
+      "category": "Dairy",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 2.62,
+        "mape": 106.2,
+        "mae": 2.37
+      },
+      "mean_actual": 2.57,
+      "mean_predicted": 4.04
+    },
+    "Chennai_Super_Dairy": {
+      "city": "Chennai",
+      "format": "Super",
+      "category": "Dairy",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 6.31,
+        "mape": 39.91,
+        "mae": 3.95
+      },
+      "mean_actual": 5.43,
+      "mean_predicted": 3.0
+    },
+    "Chennai_Express_Fruits": {
+      "city": "Chennai",
+      "format": "Express",
+      "category": "Fruits",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.14,
+        "mape": 46.83,
+        "mae": 2.97
+      },
+      "mean_actual": 4.21,
+      "mean_predicted": 2.37
+    },
+    "Chennai_Hyper_Fruits": {
+      "city": "Chennai",
+      "format": "Hyper",
+      "category": "Fruits",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 5.57,
+        "mape": 73.86,
+        "mae": 4.14
+      },
+      "mean_actual": 4.71,
+      "mean_predicted": 3.06
+    },
+    "Chennai_Super_Fruits": {
+      "city": "Chennai",
+      "format": "Super",
+      "category": "Fruits",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.82,
+        "mape": 102.65,
+        "mae": 3.73
+      },
+      "mean_actual": 4.64,
+      "mean_predicted": 5.91
+    },
+    "Chennai_Express_Grocery": {
+      "city": "Chennai",
+      "format": "Express",
+      "category": "Grocery",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 5.94,
+        "mape": 60.2,
+        "mae": 4.61
+      },
+      "mean_actual": 6.36,
+      "mean_predicted": 1.75
+    },
+    "Chennai_Hyper_Grocery": {
+      "city": "Chennai",
+      "format": "Hyper",
+      "category": "Grocery",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 5.2,
+        "mape": 65.32,
+        "mae": 4.3
+      },
+      "mean_actual": 5.21,
+      "mean_predicted": 6.08
+    },
+    "Chennai_Super_Grocery": {
+      "city": "Chennai",
+      "format": "Super",
+      "category": "Grocery",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 5.03,
+        "mape": 81.76,
+        "mae": 3.43
+      },
+      "mean_actual": 3.29,
+      "mean_predicted": 1.7
+    },
+    "Chennai_Express_Home Care": {
+      "city": "Chennai",
+      "format": "Express",
+      "category": "Home Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 5.84,
+        "mape": 84.15,
+        "mae": 4.74
+      },
+      "mean_actual": 5.64,
+      "mean_predicted": 4.36
+    },
+    "Chennai_Hyper_Home Care": {
+      "city": "Chennai",
+      "format": "Hyper",
+      "category": "Home Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.04,
+        "mape": 88.41,
+        "mae": 3.32
+      },
+      "mean_actual": 4.43,
+      "mean_predicted": 6.29
+    },
+    "Chennai_Super_Home Care": {
+      "city": "Chennai",
+      "format": "Super",
+      "category": "Home Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 2.71,
+        "mape": 71.22,
+        "mae": 2.35
+      },
+      "mean_actual": 3.64,
+      "mean_predicted": 4.09
+    },
+    "Chennai_Express_Personal Care": {
+      "city": "Chennai",
+      "format": "Express",
+      "category": "Personal Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 5.21,
+        "mape": 90.04,
+        "mae": 4.01
+      },
+      "mean_actual": 4.93,
+      "mean_predicted": 5.0
+    },
+    "Chennai_Hyper_Personal Care": {
+      "city": "Chennai",
+      "format": "Hyper",
+      "category": "Personal Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.69,
+        "mape": 75.05,
+        "mae": 3.17
+      },
+      "mean_actual": 3.43,
+      "mean_predicted": 5.5
+    },
+    "Chennai_Super_Personal Care": {
+      "city": "Chennai",
+      "format": "Super",
+      "category": "Personal Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.86,
+        "mape": 49.11,
+        "mae": 3.88
+      },
+      "mean_actual": 5.5,
+      "mean_predicted": 2.95
+    },
+    "Chennai_Express_Snacks": {
+      "city": "Chennai",
+      "format": "Express",
+      "category": "Snacks",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 5.28,
+        "mape": 145.14,
+        "mae": 4.72
+      },
+      "mean_actual": 3.5,
+      "mean_predicted": 7.55
+    },
+    "Chennai_Hyper_Snacks": {
+      "city": "Chennai",
+      "format": "Hyper",
+      "category": "Snacks",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 5.32,
+        "mape": 63.64,
+        "mae": 4.1
+      },
+      "mean_actual": 5.14,
+      "mean_predicted": 2.5
+    },
+    "Chennai_Super_Snacks": {
+      "city": "Chennai",
+      "format": "Super",
+      "category": "Snacks",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 2.2,
+        "mape": 62.9,
+        "mae": 1.87
+      },
+      "mean_actual": 3.29,
+      "mean_predicted": 2.79
+    },
+    "Chennai_Express_Vegetables": {
+      "city": "Chennai",
+      "format": "Express",
+      "category": "Vegetables",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.83,
+        "mape": 62.29,
+        "mae": 3.09
+      },
+      "mean_actual": 4.29,
+      "mean_predicted": 5.79
+    },
+    "Chennai_Hyper_Vegetables": {
+      "city": "Chennai",
+      "format": "Hyper",
+      "category": "Vegetables",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 5.07,
+        "mape": 78.12,
+        "mae": 4.22
+      },
+      "mean_actual": 4.86,
+      "mean_predicted": 0.75
+    },
+    "Chennai_Super_Vegetables": {
+      "city": "Chennai",
+      "format": "Super",
+      "category": "Vegetables",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 6.42,
+        "mape": 161.33,
+        "mae": 5.56
+      },
+      "mean_actual": 4.5,
+      "mean_predicted": 6.36
+    },
+    "Delhi_Express_Beverages": {
+      "city": "Delhi",
+      "format": "Express",
+      "category": "Beverages",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 6.21,
+        "mape": 122.49,
+        "mae": 4.76
+      },
+      "mean_actual": 6.43,
+      "mean_predicted": 5.98
+    },
+    "Delhi_Hyper_Beverages": {
+      "city": "Delhi",
+      "format": "Hyper",
+      "category": "Beverages",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 2.41,
+        "mape": 47.86,
+        "mae": 2.1
+      },
+      "mean_actual": 2.14,
+      "mean_predicted": 2.91
+    },
+    "Delhi_Super_Beverages": {
+      "city": "Delhi",
+      "format": "Super",
+      "category": "Beverages",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.42,
+        "mape": 51.0,
+        "mae": 2.62
+      },
+      "mean_actual": 3.36,
+      "mean_predicted": 5.54
+    },
+    "Delhi_Express_Dairy": {
+      "city": "Delhi",
+      "format": "Express",
+      "category": "Dairy",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.93,
+        "mape": 47.05,
+        "mae": 3.33
+      },
+      "mean_actual": 5.07,
+      "mean_predicted": 3.37
+    },
+    "Delhi_Hyper_Dairy": {
+      "city": "Delhi",
+      "format": "Hyper",
+      "category": "Dairy",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 5.82,
+        "mape": 75.72,
+        "mae": 4.8
+      },
+      "mean_actual": 7.0,
+      "mean_predicted": 5.82
+    },
+    "Delhi_Super_Dairy": {
+      "city": "Delhi",
+      "format": "Super",
+      "category": "Dairy",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 5.47,
+        "mape": 43.03,
+        "mae": 3.45
+      },
+      "mean_actual": 4.93,
+      "mean_predicted": 2.77
+    },
+    "Delhi_Express_Fruits": {
+      "city": "Delhi",
+      "format": "Express",
+      "category": "Fruits",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.63,
+        "mape": 92.18,
+        "mae": 3.92
+      },
+      "mean_actual": 4.86,
+      "mean_predicted": 5.65
+    },
+    "Delhi_Hyper_Fruits": {
+      "city": "Delhi",
+      "format": "Hyper",
+      "category": "Fruits",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.78,
+        "mape": 70.47,
+        "mae": 4.25
+      },
+      "mean_actual": 3.14,
+      "mean_predicted": 6.36
+    },
+    "Delhi_Super_Fruits": {
+      "city": "Delhi",
+      "format": "Super",
+      "category": "Fruits",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.71,
+        "mape": 108.04,
+        "mae": 4.0
+      },
+      "mean_actual": 3.86,
+      "mean_predicted": 6.19
+    },
+    "Delhi_Express_Grocery": {
+      "city": "Delhi",
+      "format": "Express",
+      "category": "Grocery",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 6.21,
+        "mape": 78.62,
+        "mae": 4.88
+      },
+      "mean_actual": 4.86,
+      "mean_predicted": 4.1
+    },
+    "Delhi_Hyper_Grocery": {
+      "city": "Delhi",
+      "format": "Hyper",
+      "category": "Grocery",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.47,
+        "mape": 71.82,
+        "mae": 3.37
+      },
+      "mean_actual": 4.21,
+      "mean_predicted": 2.62
+    },
+    "Delhi_Super_Grocery": {
+      "city": "Delhi",
+      "format": "Super",
+      "category": "Grocery",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.5,
+        "mape": 84.99,
+        "mae": 3.3
+      },
+      "mean_actual": 3.93,
+      "mean_predicted": 3.95
+    },
+    "Delhi_Express_Home Care": {
+      "city": "Delhi",
+      "format": "Express",
+      "category": "Home Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 6.18,
+        "mape": 249.21,
+        "mae": 5.94
+      },
+      "mean_actual": 1.64,
+      "mean_predicted": 7.58
+    },
+    "Delhi_Hyper_Home Care": {
+      "city": "Delhi",
+      "format": "Hyper",
+      "category": "Home Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.29,
+        "mape": 73.08,
+        "mae": 2.72
+      },
+      "mean_actual": 4.79,
+      "mean_predicted": 5.03
+    },
+    "Delhi_Super_Home Care": {
+      "city": "Delhi",
+      "format": "Super",
+      "category": "Home Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 2.11,
+        "mape": 53.66,
+        "mae": 1.68
+      },
+      "mean_actual": 3.36,
+      "mean_predicted": 4.11
+    },
+    "Delhi_Express_Personal Care": {
+      "city": "Delhi",
+      "format": "Express",
+      "category": "Personal Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.93,
+        "mape": 33.18,
+        "mae": 3.36
+      },
+      "mean_actual": 4.21,
+      "mean_predicted": 5.43
+    },
+    "Delhi_Hyper_Personal Care": {
+      "city": "Delhi",
+      "format": "Hyper",
+      "category": "Personal Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.66,
+        "mape": 48.83,
+        "mae": 3.01
+      },
+      "mean_actual": 6.21,
+      "mean_predicted": 5.07
+    },
+    "Delhi_Super_Personal Care": {
+      "city": "Delhi",
+      "format": "Super",
+      "category": "Personal Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.45,
+        "mape": 111.11,
+        "mae": 4.11
+      },
+      "mean_actual": 2.64,
+      "mean_predicted": 6.42
+    },
+    "Delhi_Express_Snacks": {
+      "city": "Delhi",
+      "format": "Express",
+      "category": "Snacks",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 5.6,
+        "mape": 69.61,
+        "mae": 4.23
+      },
+      "mean_actual": 5.07,
+      "mean_predicted": 1.98
+    },
+    "Delhi_Hyper_Snacks": {
+      "city": "Delhi",
+      "format": "Hyper",
+      "category": "Snacks",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.03,
+        "mape": 56.24,
+        "mae": 3.27
+      },
+      "mean_actual": 4.0,
+      "mean_predicted": 3.95
+    },
+    "Delhi_Super_Snacks": {
+      "city": "Delhi",
+      "format": "Super",
+      "category": "Snacks",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.3,
+        "mape": 143.14,
+        "mae": 3.43
+      },
+      "mean_actual": 3.79,
+      "mean_predicted": 6.78
+    },
+    "Delhi_Express_Vegetables": {
+      "city": "Delhi",
+      "format": "Express",
+      "category": "Vegetables",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 2.63,
+        "mape": 28.13,
+        "mae": 2.28
+      },
+      "mean_actual": 1.93,
+      "mean_predicted": 2.75
+    },
+    "Delhi_Hyper_Vegetables": {
+      "city": "Delhi",
+      "format": "Hyper",
+      "category": "Vegetables",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.5,
+        "mape": 64.64,
+        "mae": 2.77
+      },
+      "mean_actual": 3.71,
+      "mean_predicted": 2.38
+    },
+    "Delhi_Super_Vegetables": {
+      "city": "Delhi",
+      "format": "Super",
+      "category": "Vegetables",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 2.95,
+        "mape": 45.44,
+        "mae": 2.03
+      },
+      "mean_actual": 2.21,
+      "mean_predicted": 1.64
+    },
+    "Hyderabad_Express_Beverages": {
+      "city": "Hyderabad",
+      "format": "Express",
+      "category": "Beverages",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 6.23,
+        "mape": 169.68,
+        "mae": 5.74
+      },
+      "mean_actual": 4.57,
+      "mean_predicted": 8.26
+    },
+    "Hyderabad_Hyper_Beverages": {
+      "city": "Hyderabad",
+      "format": "Hyper",
+      "category": "Beverages",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 5.13,
+        "mape": 112.03,
+        "mae": 4.04
+      },
+      "mean_actual": 5.43,
+      "mean_predicted": 3.26
+    },
+    "Hyderabad_Super_Beverages": {
+      "city": "Hyderabad",
+      "format": "Super",
+      "category": "Beverages",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.25,
+        "mape": 24.32,
+        "mae": 3.37
+      },
+      "mean_actual": 4.5,
+      "mean_predicted": 5.4
+    },
+    "Hyderabad_Express_Dairy": {
+      "city": "Hyderabad",
+      "format": "Express",
+      "category": "Dairy",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.9,
+        "mape": 66.19,
+        "mae": 3.78
+      },
+      "mean_actual": 4.57,
+      "mean_predicted": 2.91
+    },
+    "Hyderabad_Hyper_Dairy": {
+      "city": "Hyderabad",
+      "format": "Hyper",
+      "category": "Dairy",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 5.26,
+        "mape": 64.81,
+        "mae": 4.39
+      },
+      "mean_actual": 6.0,
+      "mean_predicted": 1.89
+    },
+    "Hyderabad_Super_Dairy": {
+      "city": "Hyderabad",
+      "format": "Super",
+      "category": "Dairy",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.26,
+        "mape": 57.11,
+        "mae": 2.65
+      },
+      "mean_actual": 4.21,
+      "mean_predicted": 3.6
+    },
+    "Hyderabad_Express_Fruits": {
+      "city": "Hyderabad",
+      "format": "Express",
+      "category": "Fruits",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.83,
+        "mape": 42.09,
+        "mae": 2.85
+      },
+      "mean_actual": 6.71,
+      "mean_predicted": 4.7
+    },
+    "Hyderabad_Hyper_Fruits": {
+      "city": "Hyderabad",
+      "format": "Hyper",
+      "category": "Fruits",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.46,
+        "mape": 54.01,
+        "mae": 3.59
+      },
+      "mean_actual": 4.07,
+      "mean_predicted": 3.01
+    },
+    "Hyderabad_Super_Fruits": {
+      "city": "Hyderabad",
+      "format": "Super",
+      "category": "Fruits",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.84,
+        "mape": 111.52,
+        "mae": 4.01
+      },
+      "mean_actual": 4.71,
+      "mean_predicted": 8.03
+    },
+    "Hyderabad_Express_Grocery": {
+      "city": "Hyderabad",
+      "format": "Express",
+      "category": "Grocery",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.93,
+        "mape": 59.82,
+        "mae": 3.39
+      },
+      "mean_actual": 4.79,
+      "mean_predicted": 3.23
+    },
+    "Hyderabad_Hyper_Grocery": {
+      "city": "Hyderabad",
+      "format": "Hyper",
+      "category": "Grocery",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.85,
+        "mape": 69.16,
+        "mae": 3.74
+      },
+      "mean_actual": 3.71,
+      "mean_predicted": 2.52
+    },
+    "Hyderabad_Super_Grocery": {
+      "city": "Hyderabad",
+      "format": "Super",
+      "category": "Grocery",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 2.51,
+        "mape": 49.63,
+        "mae": 2.17
+      },
+      "mean_actual": 4.29,
+      "mean_predicted": 2.72
+    },
+    "Hyderabad_Express_Home Care": {
+      "city": "Hyderabad",
+      "format": "Express",
+      "category": "Home Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 2.61,
+        "mape": 52.66,
+        "mae": 2.25
+      },
+      "mean_actual": 3.64,
+      "mean_predicted": 3.17
+    },
+    "Hyderabad_Hyper_Home Care": {
+      "city": "Hyderabad",
+      "format": "Hyper",
+      "category": "Home Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 2.91,
+        "mape": 93.71,
+        "mae": 2.37
+      },
+      "mean_actual": 3.64,
+      "mean_predicted": 4.64
+    },
+    "Hyderabad_Super_Home Care": {
+      "city": "Hyderabad",
+      "format": "Super",
+      "category": "Home Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.32,
+        "mape": 63.76,
+        "mae": 3.01
+      },
+      "mean_actual": 5.14,
+      "mean_predicted": 2.83
+    },
+    "Hyderabad_Express_Personal Care": {
+      "city": "Hyderabad",
+      "format": "Express",
+      "category": "Personal Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.24,
+        "mape": 53.27,
+        "mae": 2.49
+      },
+      "mean_actual": 4.5,
+      "mean_predicted": 3.7
+    },
+    "Hyderabad_Hyper_Personal Care": {
+      "city": "Hyderabad",
+      "format": "Hyper",
+      "category": "Personal Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.3,
+        "mape": 64.64,
+        "mae": 2.77
+      },
+      "mean_actual": 3.07,
+      "mean_predicted": 4.55
+    },
+    "Hyderabad_Super_Personal Care": {
+      "city": "Hyderabad",
+      "format": "Super",
+      "category": "Personal Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.7,
+        "mape": 61.19,
+        "mae": 2.84
+      },
+      "mean_actual": 3.14,
+      "mean_predicted": 3.48
+    },
+    "Hyderabad_Express_Snacks": {
+      "city": "Hyderabad",
+      "format": "Express",
+      "category": "Snacks",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.9,
+        "mape": 137.69,
+        "mae": 4.43
+      },
+      "mean_actual": 1.86,
+      "mean_predicted": 6.17
+    },
+    "Hyderabad_Hyper_Snacks": {
+      "city": "Hyderabad",
+      "format": "Hyper",
+      "category": "Snacks",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 5.79,
+        "mape": 75.22,
+        "mae": 4.94
+      },
+      "mean_actual": 6.0,
+      "mean_predicted": 1.38
+    },
+    "Hyderabad_Super_Snacks": {
+      "city": "Hyderabad",
+      "format": "Super",
+      "category": "Snacks",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.1,
+        "mape": 142.09,
+        "mae": 2.65
+      },
+      "mean_actual": 3.43,
+      "mean_predicted": 5.98
+    },
+    "Hyderabad_Express_Vegetables": {
+      "city": "Hyderabad",
+      "format": "Express",
+      "category": "Vegetables",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.76,
+        "mape": 54.76,
+        "mae": 2.51
+      },
+      "mean_actual": 3.36,
+      "mean_predicted": 2.11
+    },
+    "Hyderabad_Hyper_Vegetables": {
+      "city": "Hyderabad",
+      "format": "Hyper",
+      "category": "Vegetables",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.69,
+        "mape": 62.33,
+        "mae": 2.84
+      },
+      "mean_actual": 3.21,
+      "mean_predicted": 1.57
+    },
+    "Hyderabad_Super_Vegetables": {
+      "city": "Hyderabad",
+      "format": "Super",
+      "category": "Vegetables",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.86,
+        "mape": 79.83,
+        "mae": 4.32
+      },
+      "mean_actual": 3.29,
+      "mean_predicted": 5.69
+    },
+    "Kolkata_Express_Beverages": {
+      "city": "Kolkata",
+      "format": "Express",
+      "category": "Beverages",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 5.46,
+        "mape": 81.4,
+        "mae": 5.1
+      },
+      "mean_actual": 5.71,
+      "mean_predicted": 3.72
+    },
+    "Kolkata_Hyper_Beverages": {
+      "city": "Kolkata",
+      "format": "Hyper",
+      "category": "Beverages",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 5.83,
+        "mape": 183.07,
+        "mae": 5.15
+      },
+      "mean_actual": 7.0,
+      "mean_predicted": 9.44
+    },
+    "Kolkata_Super_Beverages": {
+      "city": "Kolkata",
+      "format": "Super",
+      "category": "Beverages",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 2.94,
+        "mape": 40.05,
+        "mae": 2.26
+      },
+      "mean_actual": 2.64,
+      "mean_predicted": 2.29
+    },
+    "Kolkata_Express_Dairy": {
+      "city": "Kolkata",
+      "format": "Express",
+      "category": "Dairy",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.31,
+        "mape": 37.06,
+        "mae": 2.76
+      },
+      "mean_actual": 3.64,
+      "mean_predicted": 4.99
+    },
+    "Kolkata_Hyper_Dairy": {
+      "city": "Kolkata",
+      "format": "Hyper",
+      "category": "Dairy",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.56,
+        "mape": 196.03,
+        "mae": 4.14
+      },
+      "mean_actual": 3.79,
+      "mean_predicted": 7.23
+    },
+    "Kolkata_Super_Dairy": {
+      "city": "Kolkata",
+      "format": "Super",
+      "category": "Dairy",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.44,
+        "mape": 53.67,
+        "mae": 4.06
+      },
+      "mean_actual": 5.43,
+      "mean_predicted": 3.52
+    },
+    "Kolkata_Express_Fruits": {
+      "city": "Kolkata",
+      "format": "Express",
+      "category": "Fruits",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 5.45,
+        "mape": 147.11,
+        "mae": 4.73
+      },
+      "mean_actual": 4.07,
+      "mean_predicted": 8.16
+    },
+    "Kolkata_Hyper_Fruits": {
+      "city": "Kolkata",
+      "format": "Hyper",
+      "category": "Fruits",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.08,
+        "mape": 55.46,
+        "mae": 2.69
+      },
+      "mean_actual": 5.29,
+      "mean_predicted": 4.43
+    },
+    "Kolkata_Super_Fruits": {
+      "city": "Kolkata",
+      "format": "Super",
+      "category": "Fruits",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 5.61,
+        "mape": 51.38,
+        "mae": 3.82
+      },
+      "mean_actual": 5.57,
+      "mean_predicted": 2.93
+    },
+    "Kolkata_Express_Grocery": {
+      "city": "Kolkata",
+      "format": "Express",
+      "category": "Grocery",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.23,
+        "mape": 30.19,
+        "mae": 2.23
+      },
+      "mean_actual": 6.21,
+      "mean_predicted": 4.46
+    },
+    "Kolkata_Hyper_Grocery": {
+      "city": "Kolkata",
+      "format": "Hyper",
+      "category": "Grocery",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.14,
+        "mape": 56.72,
+        "mae": 2.42
+      },
+      "mean_actual": 3.07,
+      "mean_predicted": 1.82
+    },
+    "Kolkata_Super_Grocery": {
+      "city": "Kolkata",
+      "format": "Super",
+      "category": "Grocery",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.76,
+        "mape": 53.24,
+        "mae": 2.99
+      },
+      "mean_actual": 5.29,
+      "mean_predicted": 3.5
+    },
+    "Kolkata_Express_Home Care": {
+      "city": "Kolkata",
+      "format": "Express",
+      "category": "Home Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.17,
+        "mape": 66.31,
+        "mae": 3.42
+      },
+      "mean_actual": 4.36,
+      "mean_predicted": 4.37
+    },
+    "Kolkata_Hyper_Home Care": {
+      "city": "Kolkata",
+      "format": "Hyper",
+      "category": "Home Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 6.53,
+        "mape": 71.06,
+        "mae": 4.45
+      },
+      "mean_actual": 5.07,
+      "mean_predicted": 1.12
+    },
+    "Kolkata_Super_Home Care": {
+      "city": "Kolkata",
+      "format": "Super",
+      "category": "Home Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.18,
+        "mape": 40.89,
+        "mae": 3.58
+      },
+      "mean_actual": 4.79,
+      "mean_predicted": 4.9
+    },
+    "Kolkata_Express_Personal Care": {
+      "city": "Kolkata",
+      "format": "Express",
+      "category": "Personal Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 2.56,
+        "mape": 32.43,
+        "mae": 2.13
+      },
+      "mean_actual": 2.79,
+      "mean_predicted": 3.79
+    },
+    "Kolkata_Hyper_Personal Care": {
+      "city": "Kolkata",
+      "format": "Hyper",
+      "category": "Personal Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.98,
+        "mape": 109.51,
+        "mae": 3.22
+      },
+      "mean_actual": 2.86,
+      "mean_predicted": 4.92
+    },
+    "Kolkata_Super_Personal Care": {
+      "city": "Kolkata",
+      "format": "Super",
+      "category": "Personal Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.79,
+        "mape": 124.18,
+        "mae": 4.12
+      },
+      "mean_actual": 5.79,
+      "mean_predicted": 5.97
+    },
+    "Kolkata_Express_Snacks": {
+      "city": "Kolkata",
+      "format": "Express",
+      "category": "Snacks",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 5.09,
+        "mape": 51.66,
+        "mae": 4.24
+      },
+      "mean_actual": 6.86,
+      "mean_predicted": 3.04
+    },
+    "Kolkata_Hyper_Snacks": {
+      "city": "Kolkata",
+      "format": "Hyper",
+      "category": "Snacks",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 6.18,
+        "mape": 60.74,
+        "mae": 5.09
+      },
+      "mean_actual": 6.36,
+      "mean_predicted": 2.99
+    },
+    "Kolkata_Super_Snacks": {
+      "city": "Kolkata",
+      "format": "Super",
+      "category": "Snacks",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.51,
+        "mape": 69.47,
+        "mae": 3.61
+      },
+      "mean_actual": 4.5,
+      "mean_predicted": 3.12
+    },
+    "Kolkata_Express_Vegetables": {
+      "city": "Kolkata",
+      "format": "Express",
+      "category": "Vegetables",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.15,
+        "mape": 100.0,
+        "mae": 3.32
+      },
+      "mean_actual": 3.79,
+      "mean_predicted": 4.77
+    },
+    "Kolkata_Hyper_Vegetables": {
+      "city": "Kolkata",
+      "format": "Hyper",
+      "category": "Vegetables",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.68,
+        "mape": 97.35,
+        "mae": 4.05
+      },
+      "mean_actual": 4.71,
+      "mean_predicted": 6.85
+    },
+    "Kolkata_Super_Vegetables": {
+      "city": "Kolkata",
+      "format": "Super",
+      "category": "Vegetables",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.66,
+        "mape": 50.09,
+        "mae": 3.68
+      },
+      "mean_actual": 4.71,
+      "mean_predicted": 4.48
+    },
+    "Mumbai_Express_Beverages": {
+      "city": "Mumbai",
+      "format": "Express",
+      "category": "Beverages",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 6.29,
+        "mape": 180.05,
+        "mae": 5.62
+      },
+      "mean_actual": 4.0,
+      "mean_predicted": 9.46
+    },
+    "Mumbai_Hyper_Beverages": {
+      "city": "Mumbai",
+      "format": "Hyper",
+      "category": "Beverages",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.16,
+        "mape": 94.21,
+        "mae": 2.78
+      },
+      "mean_actual": 3.29,
+      "mean_predicted": 4.1
+    },
+    "Mumbai_Super_Beverages": {
+      "city": "Mumbai",
+      "format": "Super",
+      "category": "Beverages",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.84,
+        "mape": 49.85,
+        "mae": 2.98
+      },
+      "mean_actual": 5.0,
+      "mean_predicted": 4.41
+    },
+    "Mumbai_Express_Dairy": {
+      "city": "Mumbai",
+      "format": "Express",
+      "category": "Dairy",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.16,
+        "mape": 68.1,
+        "mae": 3.53
+      },
+      "mean_actual": 5.36,
+      "mean_predicted": 6.31
+    },
+    "Mumbai_Hyper_Dairy": {
+      "city": "Mumbai",
+      "format": "Hyper",
+      "category": "Dairy",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.97,
+        "mape": 82.5,
+        "mae": 3.36
+      },
+      "mean_actual": 4.86,
+      "mean_predicted": 6.58
+    },
+    "Mumbai_Super_Dairy": {
+      "city": "Mumbai",
+      "format": "Super",
+      "category": "Dairy",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.59,
+        "mape": 47.76,
+        "mae": 3.04
+      },
+      "mean_actual": 4.14,
+      "mean_predicted": 3.19
+    },
+    "Mumbai_Express_Fruits": {
+      "city": "Mumbai",
+      "format": "Express",
+      "category": "Fruits",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 6.1,
+        "mape": 118.87,
+        "mae": 5.58
+      },
+      "mean_actual": 5.21,
+      "mean_predicted": 7.82
+    },
+    "Mumbai_Hyper_Fruits": {
+      "city": "Mumbai",
+      "format": "Hyper",
+      "category": "Fruits",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.7,
+        "mape": 82.27,
+        "mae": 3.07
+      },
+      "mean_actual": 4.36,
+      "mean_predicted": 5.02
+    },
+    "Mumbai_Super_Fruits": {
+      "city": "Mumbai",
+      "format": "Super",
+      "category": "Fruits",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.68,
+        "mape": 69.57,
+        "mae": 4.03
+      },
+      "mean_actual": 5.14,
+      "mean_predicted": 1.53
+    },
+    "Mumbai_Express_Grocery": {
+      "city": "Mumbai",
+      "format": "Express",
+      "category": "Grocery",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.85,
+        "mape": 48.97,
+        "mae": 3.32
+      },
+      "mean_actual": 5.0,
+      "mean_predicted": 4.53
+    },
+    "Mumbai_Hyper_Grocery": {
+      "city": "Mumbai",
+      "format": "Hyper",
+      "category": "Grocery",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.56,
+        "mape": 45.92,
+        "mae": 3.02
+      },
+      "mean_actual": 3.21,
+      "mean_predicted": 5.14
+    },
+    "Mumbai_Super_Grocery": {
+      "city": "Mumbai",
+      "format": "Super",
+      "category": "Grocery",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 2.59,
+        "mape": 72.37,
+        "mae": 2.28
+      },
+      "mean_actual": 3.0,
+      "mean_predicted": 3.07
+    },
+    "Mumbai_Express_Home Care": {
+      "city": "Mumbai",
+      "format": "Express",
+      "category": "Home Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.37,
+        "mape": 67.1,
+        "mae": 3.4
+      },
+      "mean_actual": 4.86,
+      "mean_predicted": 3.43
+    },
+    "Mumbai_Hyper_Home Care": {
+      "city": "Mumbai",
+      "format": "Hyper",
+      "category": "Home Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.68,
+        "mape": 31.39,
+        "mae": 2.97
+      },
+      "mean_actual": 3.14,
+      "mean_predicted": 5.84
+    },
+    "Mumbai_Super_Home Care": {
+      "city": "Mumbai",
+      "format": "Super",
+      "category": "Home Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 1.89,
+        "mape": 38.47,
+        "mae": 1.65
+      },
+      "mean_actual": 2.71,
+      "mean_predicted": 2.38
+    },
+    "Mumbai_Express_Personal Care": {
+      "city": "Mumbai",
+      "format": "Express",
+      "category": "Personal Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.5,
+        "mape": 52.27,
+        "mae": 3.12
+      },
+      "mean_actual": 4.0,
+      "mean_predicted": 2.56
+    },
+    "Mumbai_Hyper_Personal Care": {
+      "city": "Mumbai",
+      "format": "Hyper",
+      "category": "Personal Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.85,
+        "mape": 63.93,
+        "mae": 3.45
+      },
+      "mean_actual": 5.86,
+      "mean_predicted": 5.81
+    },
+    "Mumbai_Super_Personal Care": {
+      "city": "Mumbai",
+      "format": "Super",
+      "category": "Personal Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 5.42,
+        "mape": 44.99,
+        "mae": 3.04
+      },
+      "mean_actual": 4.5,
+      "mean_predicted": 2.52
+    },
+    "Mumbai_Express_Snacks": {
+      "city": "Mumbai",
+      "format": "Express",
+      "category": "Snacks",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.71,
+        "mape": 77.31,
+        "mae": 4.05
+      },
+      "mean_actual": 4.07,
+      "mean_predicted": 6.22
+    },
+    "Mumbai_Hyper_Snacks": {
+      "city": "Mumbai",
+      "format": "Hyper",
+      "category": "Snacks",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.32,
+        "mape": 32.24,
+        "mae": 2.5
+      },
+      "mean_actual": 3.21,
+      "mean_predicted": 3.62
+    },
+    "Mumbai_Super_Snacks": {
+      "city": "Mumbai",
+      "format": "Super",
+      "category": "Snacks",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.5,
+        "mape": 74.17,
+        "mae": 2.81
+      },
+      "mean_actual": 3.21,
+      "mean_predicted": 0.77
+    },
+    "Mumbai_Express_Vegetables": {
+      "city": "Mumbai",
+      "format": "Express",
+      "category": "Vegetables",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 5.3,
+        "mape": 74.57,
+        "mae": 4.0
+      },
+      "mean_actual": 6.07,
+      "mean_predicted": 5.29
+    },
+    "Mumbai_Hyper_Vegetables": {
+      "city": "Mumbai",
+      "format": "Hyper",
+      "category": "Vegetables",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.76,
+        "mape": 111.85,
+        "mae": 3.31
+      },
+      "mean_actual": 5.36,
+      "mean_predicted": 6.3
+    },
+    "Mumbai_Super_Vegetables": {
+      "city": "Mumbai",
+      "format": "Super",
+      "category": "Vegetables",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.55,
+        "mape": 68.7,
+        "mae": 3.0
+      },
+      "mean_actual": 4.36,
+      "mean_predicted": 6.45
+    },
+    "Pune_Express_Beverages": {
+      "city": "Pune",
+      "format": "Express",
+      "category": "Beverages",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.75,
+        "mape": 82.45,
+        "mae": 3.76
+      },
+      "mean_actual": 3.5,
+      "mean_predicted": 4.36
+    },
+    "Pune_Hyper_Beverages": {
+      "city": "Pune",
+      "format": "Hyper",
+      "category": "Beverages",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.15,
+        "mape": 97.74,
+        "mae": 3.66
+      },
+      "mean_actual": 3.86,
+      "mean_predicted": 4.55
+    },
+    "Pune_Super_Beverages": {
+      "city": "Pune",
+      "format": "Super",
+      "category": "Beverages",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.31,
+        "mape": 49.4,
+        "mae": 2.77
+      },
+      "mean_actual": 4.36,
+      "mean_predicted": 3.7
+    },
+    "Pune_Express_Dairy": {
+      "city": "Pune",
+      "format": "Express",
+      "category": "Dairy",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 5.23,
+        "mape": 52.23,
+        "mae": 4.23
+      },
+      "mean_actual": 5.86,
+      "mean_predicted": 2.9
+    },
+    "Pune_Hyper_Dairy": {
+      "city": "Pune",
+      "format": "Hyper",
+      "category": "Dairy",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.75,
+        "mape": 61.91,
+        "mae": 2.84
+      },
+      "mean_actual": 3.5,
+      "mean_predicted": 3.56
+    },
+    "Pune_Super_Dairy": {
+      "city": "Pune",
+      "format": "Super",
+      "category": "Dairy",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 2.52,
+        "mape": 80.48,
+        "mae": 2.05
+      },
+      "mean_actual": 4.29,
+      "mean_predicted": 4.16
+    },
+    "Pune_Express_Fruits": {
+      "city": "Pune",
+      "format": "Express",
+      "category": "Fruits",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.62,
+        "mape": 57.54,
+        "mae": 2.75
+      },
+      "mean_actual": 3.79,
+      "mean_predicted": 1.24
+    },
+    "Pune_Hyper_Fruits": {
+      "city": "Pune",
+      "format": "Hyper",
+      "category": "Fruits",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 5.39,
+        "mape": 147.5,
+        "mae": 4.43
+      },
+      "mean_actual": 6.29,
+      "mean_predicted": 9.44
+    },
+    "Pune_Super_Fruits": {
+      "city": "Pune",
+      "format": "Super",
+      "category": "Fruits",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.57,
+        "mape": 101.99,
+        "mae": 3.77
+      },
+      "mean_actual": 3.79,
+      "mean_predicted": 5.99
+    },
+    "Pune_Express_Grocery": {
+      "city": "Pune",
+      "format": "Express",
+      "category": "Grocery",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 5.49,
+        "mape": 82.22,
+        "mae": 4.51
+      },
+      "mean_actual": 6.21,
+      "mean_predicted": 5.67
+    },
+    "Pune_Hyper_Grocery": {
+      "city": "Pune",
+      "format": "Hyper",
+      "category": "Grocery",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.12,
+        "mape": 63.37,
+        "mae": 3.58
+      },
+      "mean_actual": 4.79,
+      "mean_predicted": 5.74
+    },
+    "Pune_Super_Grocery": {
+      "city": "Pune",
+      "format": "Super",
+      "category": "Grocery",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.95,
+        "mape": 148.55,
+        "mae": 3.51
+      },
+      "mean_actual": 4.14,
+      "mean_predicted": 5.38
+    },
+    "Pune_Express_Home Care": {
+      "city": "Pune",
+      "format": "Express",
+      "category": "Home Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 5.04,
+        "mape": 88.13,
+        "mae": 3.92
+      },
+      "mean_actual": 4.07,
+      "mean_predicted": 3.06
+    },
+    "Pune_Hyper_Home Care": {
+      "city": "Pune",
+      "format": "Hyper",
+      "category": "Home Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 5.91,
+        "mape": 256.06,
+        "mae": 5.24
+      },
+      "mean_actual": 3.86,
+      "mean_predicted": 8.36
+    },
+    "Pune_Super_Home Care": {
+      "city": "Pune",
+      "format": "Super",
+      "category": "Home Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.47,
+        "mape": 62.13,
+        "mae": 3.42
+      },
+      "mean_actual": 4.14,
+      "mean_predicted": 1.49
+    },
+    "Pune_Express_Personal Care": {
+      "city": "Pune",
+      "format": "Express",
+      "category": "Personal Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.89,
+        "mape": 44.43,
+        "mae": 3.35
+      },
+      "mean_actual": 5.93,
+      "mean_predicted": 4.78
+    },
+    "Pune_Hyper_Personal Care": {
+      "city": "Pune",
+      "format": "Hyper",
+      "category": "Personal Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 5.9,
+        "mape": 70.99,
+        "mae": 4.89
+      },
+      "mean_actual": 6.5,
+      "mean_predicted": 3.69
+    },
+    "Pune_Super_Personal Care": {
+      "city": "Pune",
+      "format": "Super",
+      "category": "Personal Care",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.08,
+        "mape": 59.47,
+        "mae": 2.67
+      },
+      "mean_actual": 3.93,
+      "mean_predicted": 3.52
+    },
+    "Pune_Express_Snacks": {
+      "city": "Pune",
+      "format": "Express",
+      "category": "Snacks",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.44,
+        "mape": 50.06,
+        "mae": 3.75
+      },
+      "mean_actual": 4.5,
+      "mean_predicted": 8.14
+    },
+    "Pune_Hyper_Snacks": {
+      "city": "Pune",
+      "format": "Hyper",
+      "category": "Snacks",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.82,
+        "mape": 55.69,
+        "mae": 3.01
+      },
+      "mean_actual": 4.43,
+      "mean_predicted": 2.47
+    },
+    "Pune_Super_Snacks": {
+      "city": "Pune",
+      "format": "Super",
+      "category": "Snacks",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.64,
+        "mape": 45.81,
+        "mae": 3.01
+      },
+      "mean_actual": 4.57,
+      "mean_predicted": 3.15
+    },
+    "Pune_Express_Vegetables": {
+      "city": "Pune",
+      "format": "Express",
+      "category": "Vegetables",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 2.88,
+        "mape": 24.5,
+        "mae": 2.16
+      },
+      "mean_actual": 5.21,
+      "mean_predicted": 4.79
+    },
+    "Pune_Hyper_Vegetables": {
+      "city": "Pune",
+      "format": "Hyper",
+      "category": "Vegetables",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 4.32,
+        "mape": 72.92,
+        "mae": 3.9
+      },
+      "mean_actual": 2.86,
+      "mean_predicted": 5.66
+    },
+    "Pune_Super_Vegetables": {
+      "city": "Pune",
+      "format": "Super",
+      "category": "Vegetables",
+      "test_days": 14,
+      "metrics": {
+        "rmse": 3.74,
+        "mape": 58.7,
+        "mae": 3.03
+      },
+      "mean_actual": 3.57,
+      "mean_predicted": 1.88
+    }
+  }
+}

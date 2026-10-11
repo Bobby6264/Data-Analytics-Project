@@ -1,0 +1,12 @@
+{
+  "model": "LSTM Neural Network (Stretch Goal)",
+  "sequence_length_days": 14,
+  "metrics": {
+    "rmse": 3.56,
+    "mape": 57.19,
+    "mae": 3.03,
+    "r2": -0.074
+  },
+  "sample_size": 65,
+  "target_slice": "Kolkata - Super - Grocery"
+}

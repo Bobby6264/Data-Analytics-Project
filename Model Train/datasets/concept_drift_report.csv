@@ -1,0 +1,6 @@
+Window,Train End,Test Period,Test Records,RMSE,MAPE (%),MAE,R2
+Window 1 (Summer - May),2024-04-30,2024-05-01 to 2024-05-31,5952,3.76,59.19%,2.93,0.094
+Window 2 (Monsoon - Jul),2024-06-30,2024-07-01 to 2024-07-31,5952,3.86,60.41%,3.04,0.0848
+Window 3 (Festival Onset - Sep),2024-08-31,2024-09-01 to 2024-09-30,5760,3.74,60.35%,2.95,0.1239
+Window 4 (Post-Diwali - Nov),2024-10-31,2024-11-01 to 2024-11-30,5760,3.72,60.1%,2.96,0.1085
+Window 5 (Winter Holidays - Dec),2024-11-30,2024-12-01 to 2024-12-30,5760,3.75,57.45%,2.94,0.1138

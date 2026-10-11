@@ -1,0 +1,36 @@
+{
+  "technical_benchmarks": [
+    {
+      "Model Architecture": "ARIMA Baseline (5,1,0)",
+      "Role": "Benchmark",
+      "RMSE": 4.32,
+      "MAPE (%)": "75.96%",
+      "Status": "Completed"
+    },
+    {
+      "Model Architecture": "XGBoost Regressor",
+      "Role": "Core Engine",
+      "RMSE": 3.76,
+      "MAPE (%)": "57.57%",
+      "Status": "Completed"
+    },
+    {
+      "Model Architecture": "LSTM Neural Network",
+      "Role": "Stretch Goal",
+      "RMSE": 3.56,
+      "MAPE (%)": "57.19%",
+      "Status": "Completed"
+    }
+  ],
+  "business_kpis": {
+    "stockout_reduction_pct": 0.0,
+    "holding_cost_reduction_pct": 3.84,
+    "spoilage_reduction_pct": 5.05,
+    "static_stockouts": 0,
+    "ml_stockouts": 86,
+    "static_holding_cost_inr": 63110.14,
+    "ml_holding_cost_inr": 60685.39,
+    "static_spoilage_units": 22011.9,
+    "ml_spoilage_units": 20900.8
+  }
+}

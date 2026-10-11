@@ -1,0 +1,60 @@
+{
+  "model": "XGBoost Regressor",
+  "metrics": {
+    "rmse": 3.76,
+    "mape": 57.57,
+    "mae": 2.95,
+    "r2": 0.1092
+  },
+  "benchmark_comparison": {
+    "arima_rmse": 4.32,
+    "arima_mape": 75.96,
+    "rmse_improvement_pct": 13.0,
+    "mape_improvement_pct": 24.2
+  },
+  "top_features": [
+    {
+      "Feature": "Reorder_Level",
+      "Importance": 0.11122209578752518
+    },
+    {
+      "Feature": "Avg_Selling_Price",
+      "Importance": 0.07092152535915375
+    },
+    {
+      "Feature": "Stock_On_Hand",
+      "Importance": 0.06750373542308807
+    },
+    {
+      "Feature": "Units_Rolling_Std_7d",
+      "Importance": 0.02661137469112873
+    },
+    {
+      "Feature": "Category_Dairy",
+      "Importance": 0.026543205603957176
+    },
+    {
+      "Feature": "City_Mumbai",
+      "Importance": 0.02634006179869175
+    },
+    {
+      "Feature": "Is_Holiday",
+      "Importance": 0.025341955944895744
+    },
+    {
+      "Feature": "City_Pune",
+      "Importance": 0.024856390431523323
+    },
+    {
+      "Feature": "Category_Fruits",
+      "Importance": 0.024606304243206978
+    },
+    {
+      "Feature": "City_Kolkata",
+      "Importance": 0.02450444921851158
+    }
+  ],
+  "test_period_start": "2024-12-01",
+  "test_period_end": "2024-12-30",
+  "test_records_count": 5760
+}
